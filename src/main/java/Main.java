@@ -31,14 +31,18 @@ public class Main {
         //Create a 2D Array with 3 rows and 3 columns and loop through all the values in the 2D Array
         System.out.println("\n Print all the values in a 2D Array");
         String[][] twoDimensionalArr2 =
-                {{"Name", "Id", "Type"},{"Pikachu", "0049", "Electric"},{"Squirtle", "0007", "Water"}, {"Bulbasaur", "0001", "Grass"}};
+                {{"Name", "Id", "Type"},{"Pikachu", "0049", "Electric"},{"Squirtle", "0007", "Water"},{"Bulbasaur", "0001", "Grass"}};
 
-        for (int col = 0; col < 3; col++){
-            for (int row = 0; row < 3; row++) {
-                System.out.println(twoDimensionalArr2[col][row]);
+        for (int row = 0; row < 4; row++){
+            for (int col = 0; col < 3; col++) {
+                System.out.print(twoDimensionalArr2[row][col]);
+                if(col == 2){
+                    System.out.println("\n");
+                } else {
+                    System.out.print("|");
+                }
             }
         }
-
 
     }
 }
